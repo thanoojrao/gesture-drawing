@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://use.fontawesome.com/0050a00bc6.js"></script>
+    <title>MY BLOG</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand"><a class="text-gray" href="#">Welcome </a></div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons"><i class="fa fa-bars"></i></div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link"><a>Home</a></li>
+                <li class="nav-link"><a  onclick="autoScrollTo('projects')">Projects</a></li>
+                <li class="nav-link"><a  onclick="autoScrollTo('alumni')">Alumni</a></li>
+                <li class="nav-link"><a >Contact us</a></li>
+            </ul>
+        </div>
+        <div class="social text-gray"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-instagram"></i></a>
+            <a
+                href=""><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-youtube"> </i></a><a href="/">  signout  </a></div>
+    </div>
+</nav>
+    <h1 class="prj-name">
+       Hand gesture drawing
+    </h1>
+    <h2 class="prj-heading">Description</h2>
+    <div class="prj-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos eos accusantium, ea dolor accusamus, quisquam magni quod asperiores officiis porro, rerum officia quam cum corrupti possimus nulla hic totam.</div>
+    <h2 class="prj-heading">Future modifications</h2>
+    <div class="prj-future">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis ullam sapiente</div>
+    <h2 class="prj-heading">Applications</h2>
+    <div class="prj-applications">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum harum fugiat qui ipsum repudiandae dicta dignissimos saepe labore soluta cum et iusto</div>
+    <a href="/gesture_drawing" class="try-it-btn"> Try it</a>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.3.5.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/layout.js') }}"></script>
+</body>
+
+</html>
